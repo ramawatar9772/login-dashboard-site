@@ -4,85 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .sidebar {
-            height: 100vh;
-            background: #2c3e50;
-            color: white;
-        }
-        .sidebar a {
-            color: white;
-            padding: 15px;
-            text-decoration: none;
-            display: block;
-        }
-        .sidebar a:hover {
-            background: #34495e;
-        }
-        .content-area {
-            padding: 20px;
-        }
-        .stats-card {
-            background: #ecf0f1;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                position: absolute;
-                width: 100%;
-                height: auto;
-                display: none;
-            }
-            .content-area {
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <div class="d-flex">
-        <div class="sidebar">
-            <h2>Dashboard</h2>
-            <a href="#">Home</a>
-            <a href="#">Profile</a>
-            <a href="#">Settings</a>
-            <a href="#">Logout</a>
-        </div>
-        <div class="content-area">
-            <header class="mb-4">
-                <h1>User Profile</h1>
-            </header>
-            <section class="stats">
-                <div class="row">
-                    <div class="col-md-4 stats-card">
-                        <h3>Total Users</h3>
-                        <p>120</p>
-                    </div>
-                    <div class="col-md-4 stats-card">
-                        <h3>Active Users</h3>
-                        <p>75</p>
-                    </div>
-                    <div class="col-md-4 stats-card">
-                        <h3>Revenue</h3>
-                        <p>$5000</p>
-                    </div>
-                </div>
-            </section>
-            <section class="user-profile">
-                <h2>Welcome, User!</h2>
-                <p>This is your dashboard overview.</p>
-            </section>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <section class="services">
+            <div class="service-card">
+                <h2>Pan Card Services</h2>
+                <p>Apply or check status of your PAN card.</p>
+            </div>
+            <div class="service-card">
+                <h2>Aadhar Card Services</h2>
+                <p>Register or update your Aadhar card details.</p>
+            </div>
+            <div class="service-card">
+                <h2>Voter ID Services</h2>
+                <p>Apply or check status of your Voter ID.</p>
+            </div>
+            <div class="service-card">
+                <h2>Jan Aadhar Correction</h2>
+                <p>Request corrections to your Jan Aadhar details.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>
